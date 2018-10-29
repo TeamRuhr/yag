@@ -38,6 +38,17 @@ class OffPageItemListViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstrac
     protected $configurationBuilder;
 
     /**
+     * Specifies whether the escaping interceptors should be disabled or enabled for the render-result of this
+     * ViewHelper
+     *
+     * @see isOutputEscapingEnabled()
+     *
+     * @var boolean
+     * @api
+     */
+    protected $escapeOutput = FALSE;
+    
+    /**
      * Initialize arguments.
      *
      * @return void
